@@ -10,34 +10,80 @@
 		<form id="form">
 			<h1>Formulario de Registro</h1>
 			<h2>Datos del representante de la entidad postulante</h2>
-			<fieldset class="left">
+			<fieldset class="left rep">
 				<label for="apellidos">Apellidos</label><input type="text" id="apellidos" required>
 				<label for="nacimiento">Fecha de Nacimiento (dd/mm/yyyy)</label><input type="text" id="nacimiento" required>
 				<label for="region-nac">Región de Nacimiento</label>
 				<select id="region-nac" required>
 					<option value="">Amazonas</option>
 					<option value="">Áncash</option>
-					<option value="">Apurímac</option>
-					<option value="">Arequipa</option>
+					<option value="">Ayacucho</option>
+					<option value="">Cajamarca</option>
+					<option value="">Callao</option>
+					<option value="">Cuzco</option>
+					<option value="">Huancavelica</option>
+					<option value="">Huánuco</option>
+					<option value="">Ica</option>
+					<option value="">Junin</option>
+					<option value="">La Libertad</option>
+					<option value="">Lambayeque</option>
+					<option value="">Lima</option>
+					<option value="">Loreto</option>
+					<option value="">Madre de Dios</option>
+					<option value="">Moquegua</option>
+					<option value="">Pasco</option>
+					<option value="">Piura</option>
+					<option value="">Puno</option>
+					<option value="">San Martin</option>
+					<option value="">Tacna</option>
+					<option value="">Tumbes</option>
+					<option value="">Ucayali</option>
 				</select>
 				<p>Sexo</p>
-				<input type="radio" id="masculino" name="genero"><label for="masculino">Masculino</label>
-				<input type="radio" id="femenino" name="genero"><label for="femenino">Femenino</label>
+				<label for="masculino"><input type="radio" id="masculino" name="genero">Masculino</label>
+				<label for="femenino"><input type="radio" id="femenino" name="genero">Femenino</label>
 				<label for="apellidos">Apellidos</label><input type="text" id="apellidos" required>
 				<label for="profesion">Profesión</label><input type="text" id="profesion" required>
 				<label for="tiempo-cargo">Tiempo en dicho cargo en cantidad de meses</label><input type="text" id="tiempo-cargo" required>
 			</fieldset>
-			<fieldset>
+			<fieldset class="right rep">
 				<label for="nombre">Nombres</label><input type="text" id="nombre" required>
 				<label for="edad">Edad</label>
 				<select id="edad" required>
+					<option value="">19</option>
+					<option value="">19</option>
+					<option value="">20</option>
+					<option value="">21</option>
+					<option value="">22</option>
+					<option value="">23</option>
+					<option value="">24</option>
 					<option value="">25</option>
-					<option value="">26</option>
 				</select>
 				<label for="region-res">Región de Residencia</label>
 				<select id="region-res" required>
+					<option value="">Amazonas</option>
+					<option value="">Áncash</option>
+					<option value="">Ayacucho</option>
+					<option value="">Cajamarca</option>
+					<option value="">Callao</option>
+					<option value="">Cuzco</option>
+					<option value="">Huancavelica</option>
+					<option value="">Huánuco</option>
+					<option value="">Ica</option>
+					<option value="">Junin</option>
+					<option value="">La Libertad</option>
+					<option value="">Lambayeque</option>
 					<option value="">Lima</option>
-					<option value="">Lima</option>
+					<option value="">Loreto</option>
+					<option value="">Madre de Dios</option>
+					<option value="">Moquegua</option>
+					<option value="">Pasco</option>
+					<option value="">Piura</option>
+					<option value="">Puno</option>
+					<option value="">San Martin</option>
+					<option value="">Tacna</option>
+					<option value="">Tumbes</option>
+					<option value="">Ucayali</option>
 				</select>
 				<label for="cargo-org">Cargo en la organización</label><input type="text" id="cargo-org" required>
 				<label for="tiempo-org">Tiempo en la organización en cantidad de meses</label><input type="text" id="tiempo-org" required>
@@ -57,64 +103,64 @@
 				</select>
 				<label for="otros">Otros</label><input type="text" id="otros" required>
 			</fieldset>
-			<fieldset>
+			<fieldset class="right">
 				<label for="ambito">Ámbito de intervención:</label>
 				<p>¿Cuáles son las regiones, provincia y distritos donde se sitúan sus operaciones a lo largo de toda la cadena del negocio?</p>
 				<h4>Regiones</h4>
-				<input type="checkbox" id="amazonas"><label for="">Amazonas</label>
-				<input type="checkbox" id="ancash"><label for="">Áncash</label>
-				<input type="checkbox" id="apurimac"><label for="">Apurímac</label>
-				<input type="checkbox" id="arequipa"><label for="">Arequipa</label>
-				<input type="checkbox" id="ayacucho"><label for="">Ayacucho</label>
-				<input type="checkbox" id="cajamarca"><label for="">Cajamarca</label>
-				<input type="checkbox" id="callao"><label for="">Callao</label>
-				<input type="checkbox" id="cuzco"><label for="">Cuzco</label>
-				<input type="checkbox" id="huancavelica"><label for="">Huancavelica</label>
-				<input type="checkbox" id="huanuco"><label for="">Huánuco</label>
-				<input type="checkbox" id="ica"><label for="">Ica</label>
-				<input type="checkbox" id="junin"><label for="">Junín</label>
-				<input type="checkbox" id="libertad"><label for="">La Libertad</label>
-				<input type="checkbox" id="lambayeque"><label for="">Lambayeque</label>
-				<input type="checkbox" id="lima"><label for="">Lima</label>
-				<input type="checkbox" id="loreto"><label for="">Loreto</label>
-				<input type="checkbox" id="mdd"><label for="">Madre de Dios</label>
-				<input type="checkbox" id="moquegua"><label for="">Moquegua</label>
-				<input type="checkbox"><label for="">Pasco</label>
-				<input type="checkbox"><label for="">Piura</label>
-				<input type="checkbox"><label for="">Puno</label>
-				<input type="checkbox"><label for="">San Martín</label>
-				<input type="checkbox"><label for="">Tacna</label>
-				<input type="checkbox"><label for="">Tumbes</label>
-				<input type="checkbox"><label for="">Ucayali</label>
+				<label for=""><input type="checkbox"> Amazonas</label>
+				<label for=""><input type="checkbox" id="ancash"> Áncash</label>
+				<label for=""><input type="checkbox" id="apurimac"> Apurímac</label>
+				<label for=""><input type="checkbox" id="arequipa"> Arequipa</label>
+				<label for=""><input type="checkbox" id="ayacucho"> Ayacucho</label>
+				<label for=""><input type="checkbox" id="cajamarca"> Cajamarca</label>
+				<label for=""><input type="checkbox" id="callao"> Callao</label>
+				<label for=""><input type="checkbox" id="cuzco"> Cuzco</label>
+				<label for=""><input type="checkbox" id="huancavelica"> Huancavelica</label>
+				<label for=""><input type="checkbox" id="huanuco"> Huánuco</label>
+				<label for=""><input type="checkbox" id="ica"> Ica</label>
+				<label for=""><input type="checkbox" id="junin"> Junín</label>
+				<label for=""><input type="checkbox" id="libertad"> La Libertad</label>
+				<label for=""><input type="checkbox" id="lambayeque"> Lambayeque</label>
+				<label for=""><input type="checkbox" id="lima"> Lima</label>
+				<label for=""><input type="checkbox" id="loreto"> Loreto</label>
+				<label for=""><input type="checkbox" id="mdd"> Madre de Dios</label>
+				<label for=""><input type="checkbox" id="moquegua"> Moquegua</label>
+				<label for=""><input type="checkbox"> Pasco</label>
+				<label for=""><input type="checkbox"> Piura</label>
+				<label for=""><input type="checkbox"> Puno</label>
+				<label for=""><input type="checkbox"> San Martín</label>
+				<label for=""><input type="checkbox"> Tacna</label>
+				<label for=""><input type="checkbox"> Tumbes</label>
+				<label for=""><input type="checkbox"> Ucayali</label>
 				<p class"italic">Indicar las provincias en las que intervienen tu emprendimiento respecto a las regiones marcadas anteriormente.</p>
 				<label for="provincia">Provincia</label><input type="text" id="provincia" required>
 				<p class"italic">Indicar los distritos en las que intervienen tu emprendimiento respecto a las provincias marcadas anteriormente.</p>
 				<label for="distrito">Distrito</label><input type="text" id="distrito" required>
-				<p>¿Está inscrita en Registros Públicos?*</p>
-				<input type="radio" id="si" name="reg-public"><label for="si">Si</label>
-				<input type="radio" id="no" name="reg-public"><label for="no">No</label>
+				<p>¿Está inscrita en Registros Públicos?<span class="red">*</span></p>
+				<label for="si"><input type="radio" id="si" name="reg-public"> Sí</label>
+				<label for="no"><input type="radio" id="no" name="reg-public"> No</label>
 				<p>Si responde “SÍ”, llena las siguientes opciones:</p>
-				<label for="ruc">RUC</label><input type="text" id="ruc" required>
+				<label for="ruc">RUC</label><input type="text" id="ruc">
 				<label for="constitucion">¿Cuándo se constituyeron? (dd/mm/yyyy)</label><input type="text" id="constitucion" required>
 			</fieldset>
 			<fieldset class="full">
 				<h2>Información estratégica de la entidad postulante</h2>
 				<p class"italic">Esta información es confidencial y no será pública en ninguna etapa del proceso de evaluación.</p>
 				<label for="">¿Cuál es el sector de la problemática social que busca resolver su Organización? (Puede marcar más de una)</label>
-				<input type="checkbox"><label for="">Género</label>
-				<input type="checkbox"><label for="">Educación</label>
-				<input type="checkbox"><label for="">Inclusión social</label>
-				<input type="checkbox"><label for="">Medio ambiente</label>
-				<input type="checkbox"><label for="">Salud</label>
-				<input type="checkbox"><label for="">Institucionalidad</label>
-				<input type="checkbox"><label for="">Turismo</label>
-				<input type="checkbox"><label for="">Cultura</label>
-				<input type="checkbox"><label for="">Arte</label>
-				<input type="checkbox"><label for="">Diseño</label>
-				<input type="checkbox"><label for="">Gastronomía</label>
-				<input type="checkbox"><label for="">Valores</label>
-				<input type="checkbox"><label for="">Deporte</label>
-				<input type="checkbox"><label for="">Transporte</label>
+				<label for=""><input type="checkbox"> Género</label>
+				<label for=""><input type="checkbox"> Educación</label>
+				<label for=""><input type="checkbox"> Inclusión social</label>
+				<label for=""><input type="checkbox"> Medio ambiente</label>
+				<label for=""><input type="checkbox"> Salud</label>
+				<label for=""><input type="checkbox"> Institucionalidad</label>
+				<label for=""><input type="checkbox"> Turismo</label>
+				<label for=""><input type="checkbox"> Cultura</label>
+				<label for=""><input type="checkbox"> Arte</label>
+				<label for=""><input type="checkbox"> Diseño</label>
+				<label for=""><input type="checkbox"> Gastronomía</label>
+				<label for=""><input type="checkbox"> Valores</label>
+				<label for=""><input type="checkbox"> Deporte</label>
+				<label for=""><input type="checkbox"> Transporte</label>
 				<h3>Conocimiento sobre el entorno y la problemática:</h3>
 				<p class="strong">Describa el principal problema social que busca resolver su organización.</p>
 				<p>Recomendamos usar datos precisos y evidenciar citando estudios, investigaciones, publicaciones, etc del problema que plantea.</p>
@@ -160,22 +206,22 @@
 				<h3>Seleccione una o más opciones que describan cómo está financiando su organización.</h3>
 				<fieldset class="left-in">
 					<h4>Fuente de Financiamiento</h4>
-					<input type="checkbox"> He ganado uno o varios grants y/o capitales semilla
-					<input type="checkbox"> Cuento con inversionistas privados
-					<input type="checkbox"> Hago campañas de Crowdfunding
-					<input type="checkbox"> He sido o estoy siendo incubado por una organización
-					<input type="checkbox"> Una parte o todo es por la venta de mis productos o servicios
-					<input type="checkbox"> Otros
+					<label><input type="checkbox"> He ganado uno o varios grants y/o capitales semilla</label>
+					<label><input type="checkbox"> Cuento con inversionistas privados</label>
+					<label><input type="checkbox"> Hago campañas de Crowdfunding</label>
+					<label><input type="checkbox"> He sido o estoy siendo incubado por una organización</label>
+					<label><input type="checkbox"> Una parte o todo es por la venta de mis productos o servicios</label>
+					<label><input type="checkbox"> Otros</label>
 					<label for="otras-fuentes">Otras Fuentes de Financiamiento</label><input type="text" id="otras-fuentes" required>
 				</fieldset>
 				<fieldset>
 					<h4>Fondos administrados durante el año 2014</h4>
-					<input type="checkbox"> <= S/. 100,000
-					<input type="checkbox"> S/. 100,001 – 200,000
-					<input type="checkbox"> S/. 200,001 – 300,000
-					<input type="checkbox"> S/. 300,001 – 400,000
-					<input type="checkbox"> S/. 400,001 – 500,000
-					<input type="checkbox"> >=S/. 500,001
+					<label><input type="checkbox"> <= S/. 100,000</label>
+					<label><input type="checkbox"> S/. 100,001 – 200,000</label>
+					<label><input type="checkbox"> S/. 200,001 – 300,000</label>
+					<label><input type="checkbox"> S/. 300,001 – 400,000</label>
+					<label><input type="checkbox"> S/. 400,001 – 500,000</label>
+					<label><input type="checkbox"> >=S/. 500,001</label>
 					<label for="monto-exacto">Monto Exacto: S/.</label><input type="text" id="monto-exacto" required>
 				</fieldset>
 				<p>¿La organización ha sido premiada antes, dentro o fuera de Perú? Si la respuesta es sí, ¿qué premios ha recibido?</p>
@@ -205,15 +251,15 @@
 				<input type="file" name="" value="">
 				<button type="button" name="button">Subir</button>
 				<p>¿Por qué medio te enteraste de la convocatoria?</p>
-				<input type="checkbox"> Amigo
-				<input type="checkbox"> Web
-				<input type="checkbox"> Redes sociales
-				<input type="checkbox"> Radio/ TV
-				<input type="checkbox"> Periódico/Revista
-				<input type="checkbox"> Charla
-				<input type="checkbox"> Organización
-				<input type="checkbox"> Universidad/Instituto
-				<input type="checkbox"> Otro
+				<label><input type="checkbox"> Amigo</label>
+				<label><input type="checkbox"> Web</label>
+				<label><input type="checkbox"> Redes sociales</label>
+				<label><input type="checkbox"> Radio/ TV</label>
+				<label><input type="checkbox"> Periódico/Revista</label>
+				<label><input type="checkbox"> Charla</label>
+				<label><input type="checkbox"> Organización</label>
+				<label><input type="checkbox"> Universidad/Instituto</label>
+				<label><input type="checkbox"> Otro</label>
 				<label for="otros-medios">Si seleccionó otros medios</label><input type="text" id="otros-medios" required>
 			</fieldset>
 			<fieldset class="full">
