@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Kunan</title>
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-		<link rel="stylesheet" href="assets/css/main.css">
-	</head>
-	<body>
-		<form id="form">
-			<h1>Formulario de Registro</h1>
-			<h2>Datos del representante de la entidad postulante</h2>
-			<fieldset class="left rep">
-				<label for="apellidos">Apellidos</label>
-				<input type="text" id="apellidos" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra" required>
-				<label for="nacimiento">Fecha de Nacimiento (dd/mm/yyyy)</label>
-				<input type="text" id="nacimiento" pattern="(\d{2})[/](\d{2})[/](\d{4})" required>
-				<label for="region-nac">Región de Nacimiento</label>
-				<select id="region-nac" required>
+
+<head>
+	<meta charset="utf-8">
+	<title>Kunan</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+	<form id="form">
+		<h1>Formulario de Registro</h1>
+		<h2>Datos del representante de la entidad postulante</h2>
+		<fieldset class="left rep">
+			<label for="apellidos">Apellidos</label>
+			<input type="text" id="apellidos" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra" required>
+			<label for="nacimiento">Fecha de Nacimiento (dd/mm/yyyy)</label>
+			<input type="text" id="nacimiento" pattern="(\d{2})[/](\d{2})[/](\d{4})" required>
+			<label for="region-nac">Región de Nacimiento</label>
+			<select id="region-nac" required>
 					<option value="">Amazonas</option>
 					<option value="">Áncash</option>
 					<option value="">Ayacucho</option>
@@ -41,19 +43,19 @@
 					<option value="">Tumbes</option>
 					<option value="">Ucayali</option>
 				</select>
-				<p>Sexo</p>
-				<label for="masculino" class="strong"><input type="radio" id="masculino" name="genero">Masculino</label>
-				<label for="femenino" class="strong"><input type="radio" id="femenino" name="genero">Femenino</label>
-				<label for="profesion">Profesión</label>
-				<input type="text" id="profesion" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra" required>
-				<label for="tiempo-cargo">Tiempo en dicho cargo en cantidad de meses</label>
-				<input type="text" id="tiempo-cargo" pattern="^([0-9])*$" title="ingresar sólo números" required>
-			</fieldset>
-			<fieldset class="right rep">
-				<label for="nombre">Nombres</label>
-				<input type="text" id="nombre" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra" required>
-				<label for="edad">Edad</label>
-				<select id="edad" required>
+			<p>Sexo</p>
+			<label for="masculino" class="strong"><input type="radio" id="masculino" name="genero">Masculino</label>
+			<label for="femenino" class="strong"><input type="radio" id="femenino" name="genero">Femenino</label>
+			<label for="profesion">Profesión</label>
+			<input type="text" id="profesion" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra" required>
+			<label for="tiempo-cargo">Tiempo en dicho cargo en cantidad de meses</label>
+			<input type="text" id="tiempo-cargo" pattern="^([0-9])*$" title="ingresar sólo números" required>
+		</fieldset>
+		<fieldset class="right rep">
+			<label for="nombre">Nombres</label>
+			<input type="text" id="nombre" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra" required>
+			<label for="edad">Edad</label>
+			<select id="edad" required>
 					<option value="">25</option>
 					<option value="">26</option>
 					<option value="">27</option>
@@ -61,8 +63,8 @@
 					<option value="">29</option>
 					<option value="">30</option>
 				</select>
-				<label for="region-res">Región de Residencia</label>
-				<select id="region-res" required>
+			<label for="region-res">Región de Residencia</label>
+			<select id="region-res" required>
 					<option value="">Amazonas</option>
 					<option value="">Áncash</option>
 					<option value="">Ayacucho</option>
@@ -87,19 +89,19 @@
 					<option value="">Tumbes</option>
 					<option value="">Ucayali</option>
 				</select>
-				<label for="cargo-org">Cargo en la organización</label>
-				<input type="text" id="cargo-org" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra" required>
-				<label for="tiempo-org">Tiempo en la organización en cantidad de meses</label>
-				<input type="text" id="tiempo-org" pattern="^([0-9])*$" title="ingresar sólo números" required>
-			</fieldset>
-			<h2>Datos de la entidad postulante</h2>
-			<fieldset class="left">
-				<label for="nombre-ent">Nombre de la Entidad</label>
-				<input type="text" id="nombre-ent" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra" required>
-				<label for="fecha-ent">¿Cuando comenzaron a operar? (dd/mm/yyyy)</label>
-				<input type="text" id="fecha-ent" pattern="(\d{2})[/](\d{2})[/](\d{4})" required>
-				<label for="tipo-org">Tipo de organización</label>
-				<select id="tipo-org" size="4" required>
+			<label for="cargo-org">Cargo en la organización</label>
+			<input type="text" id="cargo-org" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra" required>
+			<label for="tiempo-org">Tiempo en la organización en cantidad de meses</label>
+			<input type="text" id="tiempo-org" pattern="^([0-9])*$" title="ingresar sólo números" required>
+		</fieldset>
+		<h2>Datos de la entidad postulante</h2>
+		<fieldset class="left">
+			<label for="nombre-ent">Nombre de la Entidad</label>
+			<input type="text" id="nombre-ent" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra" required>
+			<label for="fecha-ent">¿Cuando comenzaron a operar? (dd/mm/yyyy)</label>
+			<input type="text" id="fecha-ent" pattern="(\d{2})[/](\d{2})[/](\d{4})" required>
+			<label for="tipo-org">Tipo de organización</label>
+			<select id="tipo-org" size="4" required>
 					<option value="">ONG</option>
 					<option value="">Fundaciones</option>
 					<option value="">Asociación Civil</option>
@@ -107,236 +109,245 @@
 					<option value="">Persona Natural</option>
 					<option value="">Otros</option>
 				</select>
-				<label for="otros">Otros</label>
-				<input type="text" id="otros" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra" required>
+			<label for="otros">Otros</label>
+			<input type="text" id="otros" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra" required>
+		</fieldset>
+		<fieldset class="right">
+			<label for="ambito">Ámbito de intervención:</label>
+			<p>¿Cuáles son las regiones, provincia y distritos donde se sitúan sus operaciones a lo largo de toda la cadena del negocio?</p>
+			<h4>Regiones</h4>
+			<label class="strong"><input type="checkbox"> Amazonas</label>
+			<label class="strong"><input type="checkbox" id="ancash"> Áncash</label>
+			<label class="strong"><input type="checkbox" id="apurimac"> Apurímac</label>
+			<label class="strong"><input type="checkbox" id="arequipa"> Arequipa</label>
+			<label class="strong"><input type="checkbox" id="ayacucho"> Ayacucho</label>
+			<label class="strong"><input type="checkbox" id="cajamarca"> Cajamarca</label>
+			<label class="strong"><input type="checkbox" id="callao"> Callao</label>
+			<label class="strong"><input type="checkbox" id="cuzco"> Cuzco</label>
+			<label class="strong"><input type="checkbox" id="huancavelica"> Huancavelica</label>
+			<label class="strong"><input type="checkbox" id="huanuco"> Huánuco</label>
+			<label class="strong"><input type="checkbox" id="ica"> Ica</label>
+			<label class="strong"><input type="checkbox" id="junin"> Junín</label>
+			<label class="strong"><input type="checkbox" id="libertad"> La Libertad</label>
+			<label class="strong"><input type="checkbox" id="lambayeque"> Lambayeque</label>
+			<label class="strong"><input type="checkbox" id="lima"> Lima</label>
+			<label class="strong"><input type="checkbox" id="loreto"> Loreto</label>
+			<label class="strong"><input type="checkbox" id="mdd"> Madre de Dios</label>
+			<label class="strong"><input type="checkbox" id="moquegua"> Moquegua</label>
+			<label class="strong"><input type="checkbox"> Pasco</label>
+			<label class="strong"><input type="checkbox"> Piura</label>
+			<label class="strong"><input type="checkbox"> Puno</label>
+			<label class="strong"><input type="checkbox"> San Martín</label>
+			<label class="strong"><input type="checkbox"> Tacna</label>
+			<label class="strong"><input type="checkbox"> Tumbes</label>
+			<label class="strong"><input type="checkbox"> Ucayali</label>
+			<p class "italic">Indicar las provincias en las que intervienen tu emprendimiento respecto a las regiones marcadas anteriormente.</p>
+			<label for="provincia">Provincia</label>
+			<input type="text" id="provincia" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra" required>
+			<p class "italic">Indicar los distritos en las que intervienen tu emprendimiento respecto a las provincias marcadas anteriormente.</p>
+			<label for="distrito">Distrito</label>
+			<input type="text" id="distrito" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra" required>
+			<p>¿Está inscrita en Registros Públicos?<span class="red">*</span></p>
+			<label for="si" class="strong"><input type="radio" id="si" name="reg-public"> Sí</label>
+			<label for="no" class="strong"><input type="radio" id="no" name="reg-public"> No</label>
+			<p>Si responde “SÍ”, llena las siguientes opciones:</p>
+			<label for="ruc">RUC</label>
+			<input type="text" id="ruc" pattern="^[10|20]{2}+[0-9]{9}$" title="Ingresar Ruc 10 o 20">
+			<label for="constitucion">¿Cuándo se constituyeron? (dd/mm/yyyy)</label>
+			<input type="text" id="constitucion" pattern="(\d{2})[/](\d{2})[/](\d{4})" required>
+		</fieldset>
+		<fieldset class="full">
+			<h2>Información estratégica de la entidad postulante</h2>
+			<p class "italic">Esta información es confidencial y no será pública en ninguna etapa del proceso de evaluación.</p>
+			<label class="strong">¿Cuál es el sector de la problemática social que busca resolver su Organización? (Puede marcar más de una)</label>
+			<label class="strong"><input type="checkbox"> Género</label>
+			<label class="strong"><input type="checkbox"> Educación</label>
+			<label class="strong"><input type="checkbox"> Inclusión social</label>
+			<label class="strong"><input type="checkbox"> Medio ambiente</label>
+			<label class="strong"><input type="checkbox"> Salud</label>
+			<label class="strong"><input type="checkbox"> Institucionalidad</label>
+			<label class="strong"><input type="checkbox"> Turismo</label>
+			<label class="strong"><input type="checkbox"> Cultura</label>
+			<label class="strong"><input type="checkbox"> Arte</label>
+			<label class="strong"><input type="checkbox"> Diseño</label>
+			<label class="strong"><input type="checkbox"> Gastronomía</label>
+			<label class="strong"><input type="checkbox"> Valores</label>
+			<label class="strong"><input type="checkbox"> Deporte</label>
+			<label class="strong"><input type="checkbox"> Transporte</label>
+			<h3>Conocimiento sobre el entorno y la problemática:</h3>
+			<p class="strong">Describa el principal problema social que busca resolver su organización.</p>
+			<p>Recomendamos usar datos precisos y evidenciar citando estudios, investigaciones, publicaciones, etc del problema que plantea.</p>
+			<p>(Máximo 80 palabras)</p>
+			<textarea name="name" rows="8" cols="80" id="problema-social" required></textarea>
+			<p>¿Cuál es el público objetivo directo e indirecto? (Máximo 20 palabras)</p>
+			<textarea name="name" rows="8" cols="80" id="publico-objetivo" required></textarea>
+			<h3>Claridad sobre la propuesta de valor</h3>
+			<p>Enuncie cómo su organización aporta a la solución del problema y qué beneficios concretos ofrece a sus públicos objetivo</p>
+			<p>(Máximo 60 palabras)</p>
+			<textarea name="name" rows="8" cols="80" id="aporte-org" required></textarea>
+			<h3>Detalle cómo funciona su organización considerando toda la cadena del negocio.</h3>
+			<p>Ejemplo:</p>
+			<p class="italic">“Mi modelo consiste en convocar mujeres recicladoras entre 20 y 45 años. Las capacito en artesanía elaborada a base de plásticos. Luego, las contrato por 4 horas diarias de trabajo para elaborar los productos. Empezamos la venta on-line de productos.
+				Cuando completamos el capital de 3mil soles de utilidad por artesana, pasamos a un contrato de tiempo completo y las recicladoras se convierten en ser artistas y empresarias. A partir de este momento, el 25% de las ventas de sus productos se reinvierten
+				en nuestra organización, para sostenerla y convocar a una nueva promoción de recicladoras”.</p>
+			<p>Efectividad del modelo. (Máximo 100 palabras)</p>
+			<textarea name="name" rows="8" cols="80" id="func-org" required></textarea>
+			<h3>Detalle la cualidad de los servicios o productos que ofrece y cómo destacan en el mercado.</h3>
+			<p class="italic">En base al ejemplo anterior: “Mi organización ofrece el servicio de capacitación a recicladoras con un método efectivo que las prepara en sólo 3 meses. También ofrezco artesanía hecha a base de plástico que se distinguen por usar diseños contemporáneos
+				en empaques también reusables”.</p>
+			<p>Calidad del servicio y/o producto. (Máximo 60 palabras)</p>
+			<textarea name="name" rows="8" cols="80" id="cualidad-serv" required></textarea>
+			<h3>¿Cómo miden el impacto social de su iniciativa?</h3>
+			<p>Describa el mecanismo, los 2 principales indicadores y la medición actual de los mismos.</p>
+			<p>Impacto social. (Máximo 100 palabras)</p>
+			<textarea name="name" rows="8" cols="80" id="impacto-social" required></textarea>
+			<h3>Exponga cómo su organización innova, qué procesos y elementos de su modelo son diferentes y competitivos en el mercado.</h3>
+			<p>Innovación. (Máximo 100 palabras)</p>
+			<textarea name="name" rows="8" cols="80" id="innovacion" required></textarea>
+			<h3>Recursos humanos</h3>
+			<p class="italic">Pueden indicar cero " 0 " si no tienen una cantidad.</p>
+			<fieldset class="left in">
+				<label for="cant-dir">¿Cuánta gente se encarga de dirigir y gestionar la iniciativa?</label>
+				<input type="text" id="cant-dir" pattern="^([0-9])*$" title="Ingresar sólo números" required>
+				<label for="cant-rem">Cantidad de Remunerados a tiempo completo</label>
+				<input type="text" id="cant-rem" pattern="^([0-9])*$" title="Ingresar sólo números" required>
+				<label for="otro-rh">Otro</label>
+				<input type="text" id="otro-rh" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra" required>
 			</fieldset>
-			<fieldset class="right">
-				<label for="ambito">Ámbito de intervención:</label>
-				<p>¿Cuáles son las regiones, provincia y distritos donde se sitúan sus operaciones a lo largo de toda la cadena del negocio?</p>
-				<h4>Regiones</h4>
-				<label class="strong"><input type="checkbox"> Amazonas</label>
-				<label class="strong"><input type="checkbox" id="ancash"> Áncash</label>
-				<label class="strong"><input type="checkbox" id="apurimac"> Apurímac</label>
-				<label class="strong"><input type="checkbox" id="arequipa"> Arequipa</label>
-				<label class="strong"><input type="checkbox" id="ayacucho"> Ayacucho</label>
-				<label class="strong"><input type="checkbox" id="cajamarca"> Cajamarca</label>
-				<label class="strong"><input type="checkbox" id="callao"> Callao</label>
-				<label class="strong"><input type="checkbox" id="cuzco"> Cuzco</label>
-				<label class="strong"><input type="checkbox" id="huancavelica"> Huancavelica</label>
-				<label class="strong"><input type="checkbox" id="huanuco"> Huánuco</label>
-				<label class="strong"><input type="checkbox" id="ica"> Ica</label>
-				<label class="strong"><input type="checkbox" id="junin"> Junín</label>
-				<label class="strong"><input type="checkbox" id="libertad"> La Libertad</label>
-				<label class="strong"><input type="checkbox" id="lambayeque"> Lambayeque</label>
-				<label class="strong"><input type="checkbox" id="lima"> Lima</label>
-				<label class="strong"><input type="checkbox" id="loreto"> Loreto</label>
-				<label class="strong"><input type="checkbox" id="mdd"> Madre de Dios</label>
-				<label class="strong"><input type="checkbox" id="moquegua"> Moquegua</label>
-				<label class="strong"><input type="checkbox"> Pasco</label>
-				<label class="strong"><input type="checkbox"> Piura</label>
-				<label class="strong"><input type="checkbox"> Puno</label>
-				<label class="strong"><input type="checkbox"> San Martín</label>
-				<label class="strong"><input type="checkbox"> Tacna</label>
-				<label class="strong"><input type="checkbox"> Tumbes</label>
-				<label class="strong"><input type="checkbox"> Ucayali</label>
-				<p class"italic">Indicar las provincias en las que intervienen tu emprendimiento respecto a las regiones marcadas anteriormente.</p>
-				<label for="provincia">Provincia</label>
-				<input type="text" id="provincia" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra" required>
-				<p class"italic">Indicar los distritos en las que intervienen tu emprendimiento respecto a las provincias marcadas anteriormente.</p>
-				<label for="distrito">Distrito</label>
-				<input type="text" id="distrito" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra" required>
-				<p>¿Está inscrita en Registros Públicos?<span class="red">*</span></p>
-				<label for="si" class="strong"><input type="radio" id="si" name="reg-public"> Sí</label>
-				<label for="no" class="strong"><input type="radio" id="no" name="reg-public"> No</label>
-				<p>Si responde “SÍ”, llena las siguientes opciones:</p>
-				<label for="ruc">RUC</label>
-				<input type="text" id="ruc" pattern="^[10|20]{2}+[0-9]{9}$" title="Ingresar Ruc 10 o 20">
-				<label for="constitucion">¿Cuándo se constituyeron? (dd/mm/yyyy)</label>
-				<input type="text" id="constitucion" pattern="(\d{2})[/](\d{2})[/](\d{4})" required>
+			<fieldset class="right in">
+				<label for="rem-parcial">Cantidad de Remunerados a tiempo parcial</label>
+				<input type="text" id="rem-parcial" pattern="^([0-9])*$" title="Ingresar sólo números" required>
+				<label for="cant-voluntarios">Cantidad de Talento Voluntario</label>
+				<input type="text" id="cant-voluntarios" pattern="^([0-9])*$" title="Ingresar sólo números" required>
+				<label for="cant-otros">Si llenas otros ingresa la cantidad</label>
+				<input type="text" id="cant-otros" pattern="^([0-9])*$" title="Ingresar sólo números" required>
 			</fieldset>
-			<fieldset class="full">
-				<h2>Información estratégica de la entidad postulante</h2>
-				<p class"italic">Esta información es confidencial y no será pública en ninguna etapa del proceso de evaluación.</p>
-				<label class="strong">¿Cuál es el sector de la problemática social que busca resolver su Organización? (Puede marcar más de una)</label>
-				<label class="strong"><input type="checkbox"> Género</label>
-				<label class="strong"><input type="checkbox"> Educación</label>
-				<label class="strong"><input type="checkbox"> Inclusión social</label>
-				<label class="strong"><input type="checkbox"> Medio ambiente</label>
-				<label class="strong"><input type="checkbox"> Salud</label>
-				<label class="strong"><input type="checkbox"> Institucionalidad</label>
-				<label class="strong"><input type="checkbox"> Turismo</label>
-				<label class="strong"><input type="checkbox"> Cultura</label>
-				<label class="strong"><input type="checkbox"> Arte</label>
-				<label class="strong"><input type="checkbox"> Diseño</label>
-				<label class="strong"><input type="checkbox"> Gastronomía</label>
-				<label class="strong"><input type="checkbox"> Valores</label>
-				<label class="strong"><input type="checkbox"> Deporte</label>
-				<label class="strong"><input type="checkbox"> Transporte</label>
-				<h3>Conocimiento sobre el entorno y la problemática:</h3>
-				<p class="strong">Describa el principal problema social que busca resolver su organización.</p>
-				<p>Recomendamos usar datos precisos y evidenciar citando estudios, investigaciones, publicaciones, etc del problema que plantea.</p>
-				<p>(Máximo 80 palabras)</p>
-				<textarea name="name" rows="8" cols="80" id="problema-social" required></textarea>
-				<p>¿Cuál es el público objetivo directo e indirecto? (Máximo 20 palabras)</p>
-				<textarea name="name" rows="8" cols="80" id="publico-objetivo"required></textarea>
-				<h3>Claridad sobre la propuesta de valor</h3>
-				<p>Enuncie cómo su organización aporta a la solución del problema y qué beneficios concretos ofrece a sus públicos objetivo</p>
-				<p>(Máximo 60 palabras)</p>
-				<textarea name="name" rows="8" cols="80" id="aporte-org" required></textarea>
-				<h3>Detalle cómo funciona su organización considerando toda la cadena del negocio.</h3>
-				<p>Ejemplo:</p>
-				<p class="italic">“Mi modelo consiste en convocar mujeres recicladoras entre 20 y 45 años. Las capacito en artesanía elaborada a base de plásticos. Luego, las contrato por 4 horas diarias de trabajo para elaborar los productos. Empezamos la venta on-line de productos. Cuando completamos el capital de 3mil soles de utilidad por artesana, pasamos a un contrato de tiempo completo y las recicladoras se convierten en ser artistas y empresarias. A partir de este momento, el 25% de las ventas de sus productos se reinvierten en nuestra organización, para sostenerla y convocar a una nueva promoción de recicladoras”.</p>
-				<p>Efectividad del modelo. (Máximo 100 palabras)</p>
-				<textarea name="name" rows="8" cols="80" id="func-org" required></textarea>
-				<h3>Detalle la cualidad de los servicios o productos que ofrece y cómo destacan en el mercado.</h3>
-				<p class="italic">En base al ejemplo anterior: “Mi organización ofrece el servicio de capacitación a recicladoras con un método efectivo que las prepara en sólo 3 meses. También ofrezco artesanía hecha a base de plástico que se distinguen por usar diseños contemporáneos en empaques también reusables”.</p>
-				<p>Calidad del servicio y/o producto. (Máximo 60 palabras)</p>
-				<textarea name="name" rows="8" cols="80" id="cualidad-serv" required></textarea>
-				<h3>¿Cómo miden el impacto social de su iniciativa?</h3>
-				<p>Describa el mecanismo, los 2 principales indicadores y la medición actual de los mismos.</p>
-				<p>Impacto social. (Máximo 100 palabras)</p>
-				<textarea name="name" rows="8" cols="80" id="impacto-social" required></textarea>
-				<h3>Exponga cómo su organización innova, qué procesos y elementos de su modelo son diferentes y competitivos en el mercado.</h3>
-				<p>Innovación. (Máximo 100 palabras)</p>
-				<textarea name="name" rows="8" cols="80" id="innovacion" required></textarea>
-				<h3>Recursos humanos</h3>
-				<p class="italic">Pueden indicar cero " 0 " si no tienen una cantidad.</p>
-				<fieldset class="left in">
-					<label for="cant-dir">¿Cuánta gente se encarga de dirigir y gestionar la iniciativa?</label>
-					<input type="text" id="cant-dir" pattern="^([0-9])*$" title="Ingresar sólo números" required>
-					<label for="cant-rem">Cantidad de Remunerados a tiempo completo</label>
-					<input type="text" id="cant-rem" pattern="^([0-9])*$" title="Ingresar sólo números" required>
-					<label for="otro-rh">Otro</label>
-					<input type="text" id="otro-rh" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra"required>
-				</fieldset>
-				<fieldset class="right in">
-					<label for="rem-parcial">Cantidad de Remunerados a tiempo parcial</label>
-					<input type="text" id="rem-parcial" pattern="^([0-9])*$" title="Ingresar sólo números" required>
-					<label for="cant-voluntarios">Cantidad de Talento Voluntario</label>
-					<input type="text" id="cant-voluntarios" pattern="^([0-9])*$" title="Ingresar sólo números" required>
-					<label for="cant-otros">Si llenas otros ingresa la cantidad</label>
-					<input type="text" id="cant-otros" pattern="^([0-9])*$" title="Ingresar sólo números" required>
-				</fieldset>
-				<p>Aliados estratégicos</p>
-				<p>¿Cuáles son las organizaciones aliadas de su proyecto y cómo se vinculan a su modelo? (separar los aliados por una coma " , " )</p>
-				<textarea name="name" rows="8" cols="80" id="aliados" required></textarea>
-				<h3>Seleccione una o más opciones que describan cómo está financiando su organización.</h3>
-				<fieldset class="left in">
-					<h4 class="strong">Fuente de Financiamiento</h4>
-					<label><input type="checkbox"> He ganado uno o varios grants y/o capitales semilla</label>
-					<label><input type="checkbox"> Cuento con inversionistas privados</label>
-					<label><input type="checkbox"> Hago campañas de Crowdfunding</label>
-					<label><input type="checkbox"> He sido o estoy siendo incubado por una organización</label>
-					<label><input type="checkbox"> Una parte o todo es por la venta de mis productos o servicios</label>
-					<label class="strong"><input type="checkbox"> Otros</label>
-					<label for="otras-fuentes">Otras Fuentes de Financiamiento</label>
-					<input type="text" id="otras-fuentes" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra" required>
-				</fieldset>
-				<fieldset class="right in">
-					<h4 class="strong">Fondos administrados durante el año 2014</h4>
-					<label><input type="checkbox"> <= S/. 100,000</label>
-					<label><input type="checkbox"> S/. 100,001 – 200,000</label>
-					<label><input type="checkbox"> S/. 200,001 – 300,000</label>
-					<label><input type="checkbox"> S/. 300,001 – 400,000</label>
-					<label><input type="checkbox"> S/. 400,001 – 500,000</label>
-					<label><input type="checkbox"> >=S/. 500,001</label>
-					<label for="monto-exacto">Monto Exacto: S/.</label>
-					<input type="text" id="monto-exacto" patern="^([0-9])*$" title="Ingresar sólo números" required>
-				</fieldset>
+			<p>Aliados estratégicos</p>
+			<p>¿Cuáles son las organizaciones aliadas de su proyecto y cómo se vinculan a su modelo? (separar los aliados por una coma " , " )</p>
+			<textarea name="name" rows="8" cols="80" id="aliados" required></textarea>
+			<h3>Seleccione una o más opciones que describan cómo está financiando su organización.</h3>
+			<fieldset class="left in">
+				<h4 class="strong">Fuente de Financiamiento</h4>
+				<label><input type="checkbox"> He ganado uno o varios grants y/o capitales semilla</label>
+				<label><input type="checkbox"> Cuento con inversionistas privados</label>
+				<label><input type="checkbox"> Hago campañas de Crowdfunding</label>
+				<label><input type="checkbox"> He sido o estoy siendo incubado por una organización</label>
+				<label><input type="checkbox"> Una parte o todo es por la venta de mis productos o servicios</label>
+				<label class="strong"><input type="checkbox"> Otros</label>
+				<label for="otras-fuentes">Otras Fuentes de Financiamiento</label>
+				<input type="text" id="otras-fuentes" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Ingresar primera letra en mayúscula por palabra" required>
 			</fieldset>
-			<fieldset class="full">
-				<p>¿La organización ha sido premiada antes, dentro o fuera de Perú? Si la respuesta es sí, ¿qué premios ha recibido?</p>
-				<textarea rows="8" cols="80" required></textarea>
+			<fieldset class="right in">
+				<h4 class="strong">Fondos administrados durante el año 2014</h4>
+				<label><input type="checkbox"> <= S/. 100,000</label>
+				<label><input type="checkbox"> S/. 100,001 – 200,000</label>
+				<label><input type="checkbox"> S/. 200,001 – 300,000</label>
+				<label><input type="checkbox"> S/. 300,001 – 400,000</label>
+				<label><input type="checkbox"> S/. 400,001 – 500,000</label>
+				<label><input type="checkbox"> >=S/. 500,001</label>
+				<label for="monto-exacto">Monto Exacto: S/.</label>
+				<input type="text" id="monto-exacto" patern="^([0-9])*$" title="Ingresar sólo números" required>
 			</fieldset>
-			<fieldset class="full">
-				<h2>Sobre el futuro de la organización postulante</h2>
-				<p>¿Cuál es el principal desafío que debe afrontar para alcanzar el propósito que persigue su iniciativa y cómo lo resolverá ? (Máximo 100 palabras)</p>
-				<textarea rows="8" cols="80" required></textarea>
-				<p>¿Cómo considera que el apoyo integral de Kunan podrá ayudarlo a superar sus desafíos y crecer? (Máximo 100 palabras)</p>
-				<textarea rows="8" cols="80" required></textarea>
-			</fieldset>
-			<h2>Información complementaria</h2>
-			<fieldset class="left">
-				<label for="web-link">Página web (link)</label>
-				<input type="text" id="web-link" required>
-				<label for="fanpage">Fanpage (link):</label>
-				<input type="text" id="fanpage" required>
-				<label for="twitter">Twitter:</label>
-				<input type="text" id="twitter" pattern="^@([A-Za-z0-9_]{1,15})" title="Ingresar primer caracter: @" required>
-				<label for="tel-fijo">Teléfono Fijo</label>
-				<input type="text" id="tel-fijo" pattern="^[0]{1}[1]{2}[\d]{7}$" title="El teléfono fijo debe tener 9 digitos y empezar con 01"required>
-				<label for="celular">Teléfono Celular</label>
-				<input type="text" id="celular" pattern="^[9]{1}[\d]{8}$" title="Celular debe tener 9 al inicio y máximo 9 dígitos" required>
-				<label for="email">Correo Electrónico</label>
-				<input type="text" id="email" pattern="([a-zA-Z0–9]+)([\_\.\-{1}])?([a-zA-Z0–9]+)\@([a-zA-Z0–9]+)([\.])([a-zA-Z\.]+)g" title="ingresar un correo válido" required>
-			</fieldset>
-			<fieldset class="right">
-				<p class="italic">Obligatorio al menos 1 foto.</p>
-				<p>Fotos de tu iniciativa</p>
-				<input type="file" name="file" value="">
-				<input type="file" name="file" value="">
-				<input type="file" name="file" value="">
-				<button type="button" name="button">Subir</button>
-				<p>¿Por qué medio te enteraste de la convocatoria?</p>
-				<label class="strong"><input type="checkbox"> Amigo</label>
-				<label class="strong"><input type="checkbox"> Web</label>
-				<label class="strong"><input type="checkbox"> Redes sociales</label>
-				<label class="strong"><input type="checkbox"> Radio/ TV</label>
-				<label class="strong"><input type="checkbox"> Periódico/Revista</label>
-				<label class="strong"><input type="checkbox"> Charla</label>
-				<label class="strong"><input type="checkbox"> Organización</label>
-				<label class="strong"><input type="checkbox"> Universidad/Instituto</label>
-				<label class="strong"><input type="checkbox"> Otro</label>
-				<label for="otros-medios">Si seleccionó otros medios</label>
-				<input type="text" id="otros-medios" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" required>
-			</fieldset>
-			<fieldset class="full">
-				<h3>Sube tu video a youtube de dos minutos y de producción simple en el que respondas a las siguientes preguntas:</h3>
-				<ul>
-					<li class="strong">¿Cuál es el sueño que quieres hacer realidad con tu iniciativa?</li>
-					<li class="strong">¿Cuál es el principal desafío del modelo de tu emprendimiento?</li>
-					<li class="strong">¿De qué manera el premio Kunan puede ayudarte a superar ese desafío?</li>
-				</ul>
-				<label for="link-video">Link Video</label>
-				<input type="text" id="link-video" required>
-				<p>1* El video debe tener acceso público en el canal de Youtube. </p>
-				<p>2* El rótulo del video debe ser: <span class="italic">"Nombre del emprendimiento/Premio Kunan 2015".</span></p>
-				<p>3* Este video será público en una de las etapas de selección.</p>
-				<p>4* La Edición y Formato, no serán parte del criterio de evaluación.</p>
-				<p>5* El excedente a los 2 minutos no será visto.</p>
-			</fieldset>
-			<h2>Declaración Jurada</h2>
-			<fieldset class="full">
-				<p>Por medio del presente formulario declaró a título personal y en representación de la organización que represento ante este Premio, que toda la información proporcionada para el Premio Kunan, es oficial, cierta y fidedigna. En tal sentido, autorizo a los organizadores del Premio para que en cualquier etapa del mismo extiendan cualquier consulta acerca de la información proveída y/o realicen la acción que estimen conveniente para la correcta verificación de los datos y antecedentes presentados. De presumirse de manera suficiente o se compruebe la falsedad y/o inexactitud de la información proveída por parte de nuestra Organización y/o de su representante oficial ante el Premio, se aceptamos que se proceda a la descalificación inmediata y a la anulación total de la postulación presentada. Dejamos expresa constancia que conocemos, respetamos y aceptamos las Bases y lineamientos del Premio Kunan organizado por Telefónica del Perú y Global Shapers Lima Hub.</p>
-				<p>Acepto la declaración</p>
-				<input type="checkbox" required>
-			</fieldset>
-			<fieldset class="full">
-				<h2>Enviar la postulación para su revisión</h2>
-				<p>He llenado todos los campos del formulario y quiero enviarla para concretar la postulación con éxito. <span class="strong">Recuerda: Al marcar este campo tu postulación no podrá ser editada nuevamente.</span></p>
-				<p>Quiero enviar mi aplicación</p>
-				<input type="checkbox" required>
-			</fieldset>
-			<input type="submit" value="Guardar" id="submit"><class="red" span></span>
+		</fieldset>
+		<fieldset class="full">
+			<p>¿La organización ha sido premiada antes, dentro o fuera de Perú? Si la respuesta es sí, ¿qué premios ha recibido?</p>
+			<textarea rows="8" cols="80" required></textarea>
+		</fieldset>
+		<fieldset class="full">
+			<h2>Sobre el futuro de la organización postulante</h2>
+			<p>¿Cuál es el principal desafío que debe afrontar para alcanzar el propósito que persigue su iniciativa y cómo lo resolverá ? (Máximo 100 palabras)</p>
+			<textarea rows="8" cols="80" required></textarea>
+			<p>¿Cómo considera que el apoyo integral de Kunan podrá ayudarlo a superar sus desafíos y crecer? (Máximo 100 palabras)</p>
+			<textarea rows="8" cols="80" required></textarea>
+		</fieldset>
+		<h2>Información complementaria</h2>
+		<fieldset class="left">
+			<label for="web-link">Página web (link)</label>
+			<input type="text" id="web-link" required>
+			<label for="fanpage">Fanpage (link):</label>
+			<input type="text" id="fanpage" required>
+			<label for="twitter">Twitter:</label>
+			<input type="text" id="twitter" pattern="^@([A-Za-z0-9_]{1,15})" title="Ingresar primer caracter: @" required>
+			<label for="tel-fijo">Teléfono Fijo</label>
+			<input type="text" id="tel-fijo" pattern="^[0]{1}[1]{2}[\d]{7}$" title="El teléfono fijo debe tener 9 digitos y empezar con 01" required>
+			<label for="celular">Teléfono Celular</label>
+			<input type="text" id="celular" pattern="^[9]{1}[\d]{8}$" title="Celular debe tener 9 al inicio y máximo 9 dígitos" required>
+			<label for="email">Correo Electrónico</label>
+			<input type="text" id="email" pattern="([a-zA-Z0–9]+)([\_\.\-{1}])?([a-zA-Z0–9]+)\@([a-zA-Z0–9]+)([\.])([a-zA-Z\.]+)g" title="ingresar un correo válido" required>
+		</fieldset>
+		<fieldset class="right">
+			<p class="italic">Obligatorio al menos 1 foto.</p>
+			<p>Fotos de tu iniciativa</p>
+			<input type="file" name="file" value="">
+			<input type="file" name="file" value="">
+			<input type="file" name="file" value="">
+			<button type="button" name="button">Subir</button>
+			<p>¿Por qué medio te enteraste de la convocatoria?</p>
+			<label class="strong"><input type="checkbox"> Amigo</label>
+			<label class="strong"><input type="checkbox"> Web</label>
+			<label class="strong"><input type="checkbox"> Redes sociales</label>
+			<label class="strong"><input type="checkbox"> Radio/ TV</label>
+			<label class="strong"><input type="checkbox"> Periódico/Revista</label>
+			<label class="strong"><input type="checkbox"> Charla</label>
+			<label class="strong"><input type="checkbox"> Organización</label>
+			<label class="strong"><input type="checkbox"> Universidad/Instituto</label>
+			<label class="strong"><input type="checkbox"> Otro</label>
+			<label for="otros-medios">Si seleccionó otros medios</label>
+			<input type="text" id="otros-medios" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" required>
+		</fieldset>
+		<fieldset class="full">
+			<h3>Sube tu video a youtube de dos minutos y de producción simple en el que respondas a las siguientes preguntas:</h3>
+			<ul>
+				<li class="strong">¿Cuál es el sueño que quieres hacer realidad con tu iniciativa?</li>
+				<li class="strong">¿Cuál es el principal desafío del modelo de tu emprendimiento?</li>
+				<li class="strong">¿De qué manera el premio Kunan puede ayudarte a superar ese desafío?</li>
+			</ul>
+			<label for="link-video">Link Video</label>
+			<input type="text" id="link-video" required>
+			<p>1* El video debe tener acceso público en el canal de Youtube. </p>
+			<p>2* El rótulo del video debe ser: <span class="italic">"Nombre del emprendimiento/Premio Kunan 2015".</span></p>
+			<p>3* Este video será público en una de las etapas de selección.</p>
+			<p>4* La Edición y Formato, no serán parte del criterio de evaluación.</p>
+			<p>5* El excedente a los 2 minutos no será visto.</p>
+		</fieldset>
+		<h2>Declaración Jurada</h2>
+		<fieldset class="full">
+			<p>Por medio del presente formulario declaró a título personal y en representación de la organización que represento ante este Premio, que toda la información proporcionada para el Premio Kunan, es oficial, cierta y fidedigna. En tal sentido, autorizo
+				a los organizadores del Premio para que en cualquier etapa del mismo extiendan cualquier consulta acerca de la información proveída y/o realicen la acción que estimen conveniente para la correcta verificación de los datos y antecedentes presentados.
+				De presumirse de manera suficiente o se compruebe la falsedad y/o inexactitud de la información proveída por parte de nuestra Organización y/o de su representante oficial ante el Premio, se aceptamos que se proceda a la descalificación inmediata y
+				a la anulación total de la postulación presentada. Dejamos expresa constancia que conocemos, respetamos y aceptamos las Bases y lineamientos del Premio Kunan organizado por Telefónica del Perú y Global Shapers Lima Hub.</p>
+			<p>Acepto la declaración</p>
+			<input type="checkbox" required>
+		</fieldset>
+		<fieldset class="full">
+			<h2>Enviar la postulación para su revisión</h2>
+			<p>He llenado todos los campos del formulario y quiero enviarla para concretar la postulación con éxito. <span class="strong">Recuerda: Al marcar este campo tu postulación no podrá ser editada nuevamente.</span></p>
+			<p>Quiero enviar mi aplicación</p>
+			<input type="checkbox" required>
+		</fieldset>
+		<input type="submit" value="Guardar" id="submit">
+		<class="red" span>
+			</span>
 			<div id="glosario">
 				<p>Encuentra información en el <a href="#" class="red">glosario de términos</a></p>
 			</div>
-		</form>
-		<footer>
-			<div class="left foot">
-				<h3>Kunan</h3>
-				<p>Premio</p>
-				<p>Comunidad</p>
-				<p>Komunicación</p>
-			</div>
-			<div class="right foot">
-				<h3 class="right">Síguenos</h3>
-				<a href="#" class="icon"><img src="assets/images/Facebook.png"></a>
-				<a href="#" class="icon"><img src="assets/images/Instagram.png" alt=""></a>
-				<a href="#" class="icon"><img src="assets/images/twitter.png" alt=""></a>
-				<a href="#" class="icon"><img src="assets/images/youtube.png" alt=""></a>
-			</div>
-		</footer>
-		<script src="assets/js/app.js" charset="utf-8"></script>
-	</body>
+	</form>
+	<footer>
+		<div class="left foot">
+			<h3>Kunan</h3>
+			<p>Premio</p>
+			<p>Comunidad</p>
+			<p>Komunicación</p>
+		</div>
+		<div class="right foot">
+			<h3 class="right">Síguenos</h3>
+			<a href="#" class="icon"><img src="assets/images/Facebook.png"></a>
+			<a href="#" class="icon"><img src="assets/images/Instagram.png" alt=""></a>
+			<a href="#" class="icon"><img src="assets/images/twitter.png" alt=""></a>
+			<a href="#" class="icon"><img src="assets/images/youtube.png" alt=""></a>
+		</div>
+	</footer>
+	<script src="assets/js/app.js" charset="utf-8"></script>
+</body>
+
 </html>
